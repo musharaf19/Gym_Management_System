@@ -1,0 +1,1055 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 1.6rem;
+  border: 2px solid whitesmoke;
+  padding: 8px 12px;
+  margin-top: 45px;
+  margin-left: 7rem;
+}
+header p {
+  font-family: "Exo 2", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  color: whitesmoke;
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+  background: url(/img3.jpg) rgba(0, 0, 0, 0.75);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 150px 0 70px 0;
+  padding-left: 7rem;
+}
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero .content .title {
+  color: whitesmoke;
+  font-size: 4rem;
+}
+.hero .content .sub-title p {
+  font-weight: 400;
+  color: whitesmoke;
+  font-size: 1.8rem;
+  line-height: 45px;
+}
+.hero .content .sub-title p:last-child {
+  color: #0095ff;
+}
+.hero .content .buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.hero .content .buttons button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #0095ff;
+  border: 1px solid #0095ff;
+  background: transparent;
+  transition: 0.3s;
+}
+.hero .content .buttons button:hover {
+  cursor: pointer;
+  background: #0095ff;
+  color: whitesmoke;
+  transition: 0.3s;
+}
+@media (max-width: 1050px) {
+  .hero {
+    padding-left: 2.5rem;
+  }
+  header {
+    margin-left: 2.5rem;
+  }
+  .hero .content .title {
+    font-size: 2.75rem;
+  }
+  .hero .content .sub-title p {
+    font-size: 1.3rem;
+    line-height: normal;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 880px) {
+  .hero {
+    background-position: center;
+  }
+  .hero .content .title {
+    font-size: 2.45rem;
+  }
+  .hero .content .sub-title p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    background-position: bottom;
+  }
+  .hero .content .title {
+    font-size: 2.2rem;
+  }
+  .hero .content .sub-title p {
+    font-size: 1rem;
+  }
+  .hero .content .buttons button {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 467px) {
+  .hero {
+    padding-left: 1rem;
+  }
+  header {
+    margin-left: 1rem;
+  }
+  .hero .content .buttons {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}
+
+.workout_session {
+  min-height: 100vh;
+  display: flex;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0 50px 0;
+  gap: 75px;
+}
+.workout_session .wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.workout_session .wrapper h1 {
+  font-size: 2.2rem;
+  color: #111;
+}
+.workout_session .wrapper p {
+  font-size: 1.4rem;
+  color: gray;
+}
+.workout_session .wrapper .bootcamps {
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.workout_session .wrapper .bootcamps div {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px 10px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.workout_session .wrapper .bootcamps div:hover {
+  background: #111;
+  transition: 0.3s;
+}
+.workout_session .wrapper .bootcamps div:hover h4 {
+  color: #0095ff;
+  transition: 0.3s;
+}
+.workout_session .wrapper .bootcamps div:hover p {
+  color: whitesmoke;
+  transition: 0.3s;
+}
+@media (max-width: 1520px) {
+  .workout_session {
+    min-width: 100%;
+    padding: 50px 20px 50px 20px;
+    gap: 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .workout_session {
+    flex-direction: column;
+  }
+  .workout_session .wrapper h1 {
+    font-size: 1.6rem;
+  }
+  .workout_session .wrapper p {
+    font-size: 20px;
+  }
+  .workout_session .wrapper .bootcamps div h4 {
+    font-size: 20px;
+  }
+  .workout_session .wrapper .bootcamps div p {
+    font-size: 20px;
+  }
+}
+.workout_session .wrapper h1,
+.workout_session .wrapper p,
+.workout_session .wrapper .bootcamps div h4,
+.workout_session .wrapper .bootcamps div p {
+  font-family: 'Playball', cursive;
+}
+
+.gallery {
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 0 50px 0;
+}
+.gallery h1 {
+  color: #0095ff;
+  font-size: 2.2rem;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+.gallery .images {
+  display: flex;
+  gap: 15px;
+  max-width: 1500px;
+  min-width: 1500px;
+  margin: 0 auto;
+}
+.gallery .images div {
+  flex: 1;
+}
+.gallery .images img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media (max-width: 1520px) {
+  .gallery {
+    padding: 50px 20px 50px 20px;
+  }
+  .gallery .images {
+    min-width: 100%;
+    gap: 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .gallery h1 {
+    font-size: 1.6rem;
+  }
+}
+
+
+.pricing {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: 100px 0 50px 0;
+}
+.pricing h1 {
+  font-size: 2.2rem;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+.pricing .wrapper {
+  display: flex;
+  gap: 30px;
+  max-width: 1500px;
+  min-width: 1500px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.pricing .wrapper .card {
+  flex: 1;
+  position: relative;
+  height: 700px;
+  box-shadow: 1px 3px 12px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 3px 12px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 3px 12px 2px rgba(0, 0, 0, 0.75);
+}
+.pricing .wrapper .card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.pricing .wrapper .card .title {
+  z-index: 1;
+  position: relative;
+  height: 250px;
+  color: #fff;
+  overflow-y: hidden;
+  padding: 30px;
+}
+.pricing .wrapper .card .title h1 {
+  font-size: 3rem;
+  color: #0095ff;
+  position: relative;
+  z-index: 5;
+}
+.pricing .wrapper .card .title h3 {
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 5;
+}
+.pricing .wrapper .card .title p {
+  font-size: 20px;
+  position: relative;
+  z-index: 5;
+  margin-top: 5px;
+}
+.pricing .wrapper .card .title::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.pricing .wrapper .card .title::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  bottom: -11px;
+  background: whitesmoke;
+  transform: skew(0, -2deg);
+  left: 0;
+}
+.pricing .wrapper .card .description {
+  background: whitesmoke;
+  position: relative;
+  z-index: 1;
+  flex: 3;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+  gap: 20px;
+}
+.pricing .wrapper .card .description p {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 15px;
+}
+.pricing .wrapper .card .description p svg {
+  color: #0095ff;
+}
+.pricing .wrapper .card .description a {
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+  background: #0095ff;
+  padding: 15px 30px;
+  border: none;
+  text-decoration: none;
+  width: fit-content;
+  transition: 0.3s;
+}
+.pricing .wrapper .card .description a:hover {
+  transition: 0.3s;
+  background: #0267af;
+}
+.pricing .wrapper .card:nth-child(2):before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.pricing .wrapper .card:nth-child(2) .description {
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  flex: 3;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+  gap: 20px;
+  color: #fff;
+  padding-top: 20px;
+}
+.pricing .wrapper .card:nth-child(2) .title {
+  z-index: 1;
+  position: relative;
+  height: 220px;
+  color: #fff;
+  overflow-y: hidden;
+}
+.pricing .wrapper .card:nth-child(2) .title::after,
+.pricing .wrapper .card:nth-child(2) .title::before {
+  display: none;
+}
+@media (max-width: 1520px) {
+  .pricing {
+    padding: 50px 20px 50px 20px;
+  }
+  .pricing .wrapper {
+    min-width: 100%;
+    gap: 25px;
+  }
+}
+@media (max-width: 1222px) {
+  .pricing .wrapper .card .title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pricing .wrapper .card .title h1 {
+    font-size: 2rem;
+    margin: 0;
+    overflow: hidden;
+  }
+  .pricing .wrapper .card .title h3 {
+    font-size: 1.6rem;
+    overflow: hidden;
+  }
+  .pricing .wrapper .card .title p {
+    overflow: hidden;
+  }
+  .pricing .wrapper .card:nth-child(2) .title {
+    height: 250.67px;
+  }
+  .pricing .wrapper .card:nth-child(2) .description {
+    height: 386px;
+  }
+}
+@media (max-width: 1200px) {
+  .pricing h1 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 900px) {
+  .pricing .wrapper .card:nth-child(2) .description,
+  .pricing .wrapper .card .description {
+    padding: 10px;
+  }
+}
+@media (max-width: 840px) {
+  .pricing .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing .wrapper .card {
+    width: 650px;
+  }
+}
+@media (max-width: 690px) {
+  .pricing .wrapper .card {
+    width: 100%;
+  }
+}
+
+.contact {
+  min-height: 800px;
+  background: url(/contact.jpg) rgba(0, 0, 0, 0.75);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 7rem;
+}
+.contact form {
+  background: whitesmoke;
+  width: 650px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 20px;
+}
+.contact form div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.contact form div label {
+  font-weight: 500;
+}
+.contact form div input {
+  font-size: 20px;
+  padding: 7px 3px;
+  border: none;
+  border-bottom: 1px solid gray;
+  background: transparent;
+}
+.contact form div input:focus {
+  outline: none;
+}
+.contact form button {
+  border: none;
+  color: whitesmoke;
+  background: #0095ff;
+  padding: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.contact form button:hover {
+  transition: 0.3s;
+  background: #0267af;
+  cursor: pointer;
+}
+@media (max-width: 1160px) {
+  .contact {
+    justify-content: center;
+    padding: 50px 20px;
+    background-position: left;
+  }
+}
+footer {
+  padding: 20px;
+  background: #111;
+  text-align: center;
+  font-size: 20px;
+  color: #0095ff;
+}
+
+.bmi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 100px 0 50px 0;
+  background: linear-gradient(45deg, #0a2b42, #60698b);
+}
+.bmi h1 {
+  font-size: 2.2rem;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+.bmi .container {
+  display: flex;
+  gap: 50px;
+  min-width: 1500px;
+  max-width: 1500px;
+  color: whitesmoke;
+}
+.bmi .container .wrapper {
+  flex: 1;
+}
+.bmi .container .wrapper:last-child {
+  overflow: hidden;
+}
+.bmi .container .wrapper:last-child img {
+  width: 100%;
+  height: 100%;
+}
+.bmi .container .wrapper form {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.bmi .container .wrapper form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.bmi .container .wrapper form div input,
+.bmi .container .wrapper form div select {
+  padding: 7px 4px;
+  font-size: 22px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: antiquewhite;
+}
+.bmi .container .wrapper form div option {
+  color: #111;
+}
+.bmi .container .wrapper form div input:focus,
+.bmi .container .wrapper form div select:focus {
+  outline: none;
+}
+.bmi .container .wrapper form button {
+  border: none;
+  padding: 10px 40px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #0095ff;
+  background: #fff;
+}
+@media (max-width: 1520px) {
+  .bmi {
+    padding: 100px 20px 50px 20px;
+  }
+  .bmi .container {
+    min-width: 100%;
+  }
+}
+@media (max-width: 735px) {
+  .bmi .container {
+    flex-direction: column-reverse;
+    gap: 1px;
+  }
+}
+body.dark {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Header */
+body.dark header {
+  border-color: #444;
+}
+body.dark header p {
+  color: #eee;
+}
+
+/* Hero Section */
+body.dark .hero {
+  background-blend-mode: darken;
+}
+body.dark .hero .content .title,
+body.dark .hero .content .sub-title p {
+  color: #eee;
+}
+body.dark .hero .content .sub-title p:last-child {
+  color: #0095ff;
+}
+body.dark .hero .content .buttons button {
+  color: #0095ff;
+  border-color: #0095ff;
+  background: transparent;
+}
+body.dark .hero .content .buttons button:hover {
+  background: #0095ff;
+  color: #fff;
+}
+
+/* Workout Sessions */
+body.dark .workout_session .wrapper h1 {
+  color: #eee;
+}
+body.dark .workout_session .wrapper p {
+  color: #bbb;
+}
+body.dark .workout_session .wrapper .bootcamps div {
+  border-color: #444;
+}
+body.dark .workout_session .wrapper .bootcamps div:hover {
+  background: #222;
+}
+body.dark .workout_session .wrapper .bootcamps div:hover p {
+  color: #ddd;
+}
+.gallery-carousel {
+  padding: 100px 0 50px;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-title {
+  font-size: 2.2rem;
+  color: #0077ff;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark Mode Support */
+body.dark .gallery-carousel {
+  background: #111;
+}
+body.dark .gallery-title {
+  color: #0095ff;
+}
+.gallery-carousel {
+  padding: 100px 0 50px;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-title {
+  font-size: 2.2rem;
+  color: #0077ff;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100vw;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Navigation Buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 3rem;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 0;
+}
+
+.carousel-button.next {
+  right: 0;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* === Dark Mode === */
+body.dark .gallery-carousel {
+  background: #111;
+}
+
+body.dark .gallery-title {
+  color: #0095ff;
+}
+
+body.dark .carousel-button {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+body.dark .carousel-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+
+/* Pricing */
+body.dark .pricing h1 {
+  color: #0095ff;
+}
+body.dark .pricing .wrapper .card .description {
+  background: #222;
+  color: #eee;
+}
+body.dark .pricing .wrapper .card .description a {
+  background: #0095ff;
+  color: #fff;
+}
+body.dark .pricing .wrapper .card .description a:hover {
+  background: #0267af;
+}
+body.dark .pricing .wrapper .card .title h1 {
+  color: #0095ff;
+}
+body.dark .pricing .wrapper .card:nth-child(2) .description {
+  background: transparent;
+  color: #fff;
+}
+
+/* Contact */
+body.dark .contact form {
+  background: #222;
+  color: #eee;
+}
+body.dark .contact form div input {
+  border-color: #888;
+  color: #eee;
+}
+body.dark .contact form button {
+  background: #0095ff;
+  color: #fff;
+}
+body.dark .contact form button:hover {
+  background: #0267af;
+}
+
+/* Footer */
+body.dark footer {
+  background: #000;
+  color: #0095ff;
+}
+
+/* BMI Section */
+body.dark .bmi {
+  background: linear-gradient(45deg, #0a2b42, #303c5a);
+}
+body.dark .bmi h1 {
+  color: #0095ff;
+}
+body.dark .bmi .container {
+  color: #fff;
+}
+body.dark .bmi .container .wrapper form div input,
+body.dark .bmi .container .wrapper form div select {
+  border-color: #ccc;
+  color: #eee;
+}
+body.dark .bmi .container .wrapper form div option {
+  color: #111;
+}
+body.dark .bmi .container .wrapper form button {
+  background: #0095ff;
+  color: #fff;
+}
+
+/* Toastify Override */
+body.dark .Toastify__toast-container {
+  background-color: #111 !important;
+  color: #fff !important;
+}
+/* Global dark mode toggle via <body class="dark"> */
+body.dark {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Toggle button style */
+.theme-toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #111;
+  color: #fff;
+}
+body.dark .theme-toggle-button {
+  background: #fff;
+  color: #111;
+}
+/* === Global fallback === */
+body.dark {
+  background-color: #111;
+  color: #fff;
+}
+
+/* === Contact Form Fix === */
+body.dark .contact form {
+  background: #1c1c1c;
+  color: #fff;
+}
+body.dark .contact form label,
+body.dark .contact form input,
+body.dark .contact form textarea {
+  color: #fff;
+  border-color: #555;
+}
+body.dark .contact form input::placeholder,
+body.dark .contact form textarea::placeholder {
+  color: #ccc;
+}
+
+/* === Workout Session Fix === */
+body.dark .workout_session .wrapper h1 {
+  color: #fff;
+}
+body.dark .workout_session .wrapper p {
+  color: #ccc;
+}
+body.dark .workout_session .wrapper .bootcamps div {
+  background-color: #222;
+  border-color: #444;
+}
+body.dark .workout_session .wrapper .bootcamps div:hover {
+  background-color: #333;
+}
+body.dark .workout_session .wrapper .bootcamps div h4 {
+  color: #0095ff;
+}
+body.dark .workout_session .wrapper .bootcamps div p {
+  color: #eee;
+}
+
+/* === Pricing Card Fix === */
+body.dark .pricing .wrapper .card .description {
+  background: #1f1f1f;
+  color: #fff;
+}
+body.dark .pricing .wrapper .card .description p {
+  color: #ddd;
+}
+body.dark .pricing .wrapper .card .title h1,
+body.dark .pricing .wrapper .card .title h3,
+body.dark .pricing .wrapper .card .title p {
+  color: #fff;
+}
+
+/* === BMI Calculator Fix === */
+body.dark .bmi {
+  background: linear-gradient(45deg, #0b1a2b, #333c5a);
+}
+body.dark .bmi .container {
+  color: #fff;
+}
+body.dark .bmi .container .wrapper form div label {
+  color: #ccc;
+}
+body.dark .bmi .container .wrapper form input,
+body.dark .bmi .container .wrapper form select {
+  color: #fff;
+  border-color: #777;
+}
+body.dark .bmi .container .wrapper form button {
+  background: #0095ff;
+  color: #fff;
+}
+
+.gallery-section {
+  padding: 100px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.gallery-section.dark {
+  background-color: #111;
+}
+
+.gallery-heading {
+  font-size: 2.2rem;
+  color: #0077ff;
+  margin-bottom: 30px;
+}
+
+.gallery-section.dark .gallery-heading {
+  color: #0095ff;
+}
+
+.gallery-image-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.gallery-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.gallery-button.left {
+  left: 0;
+}
+
+.gallery-button.right {
+  right: 0;
+}
+
+.gallery-button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.gallery-section.dark .gallery-button {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.gallery-section.dark .gallery-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.gallery-image {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+
